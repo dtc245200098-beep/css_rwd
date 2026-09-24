@@ -1,0 +1,24 @@
+<style>
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* Cả khoảng cách hàng và cột đều bằng 15px */
+    grid-gap: 15px;
+    background-color: #4CAF50;
+    padding: 10px;
+  }
+  .grid-container-2 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+<div class="grid-container-2">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
