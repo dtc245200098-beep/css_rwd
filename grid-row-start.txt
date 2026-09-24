@@ -1,0 +1,14 @@
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    grid-template-columns: 1fr;
+  }
+  .item-start {
+    /* Bắt đầu hiển thị từ vạch hàng (row line) thứ 3 */
+    grid-row-start: 3;
+  }
+</style>
+<div class="grid-container">
+  <div class="item-start">Item bắt đầu ở hàng 3</div>
+</div>

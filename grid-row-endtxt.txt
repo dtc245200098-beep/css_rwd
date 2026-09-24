@@ -1,0 +1,15 @@
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    grid-template-columns: 1fr;
+  }
+  .item-end {
+    grid-row-start: 1;
+    /* Dừng hiển thị tại vạch hàng thứ 4 (hoặc span 3 để kéo dài qua 3 hàng) */
+    grid-row-end: 4; 
+  }
+</style>
+<div class="grid-container">
+  <div class="item-end">Item từ hàng 1 đến hàng 3 (dừng ở line 4)</div>
+</div>
