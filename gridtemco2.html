@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <style>
+    .grid-container-repeat {
+      display: grid;
+      /* Tạo 4 cột bằng nhau, mỗi cột chiếm 1fr */
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid-container-content {
+      display: grid;
+      /* Cột 1 co theo kích thước chữ nhỏ nhất, Cột 2 giãn theo chữ dài nhất */
+      grid-template-columns: min-content max-content;
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Lưới 4 cột đều nhau (dùng repeat):</h3>
+  <div class="grid-container-repeat">
+    <div class="item">Cột 1</div>
+    <div class="item">Cột 2</div>
+    <div class="item">Cột 3</div>
+    <div class="item">Cột 4</div>
+  </div>
+
+  <h3>Lưới dùng min-content & max-content:</h3>
+  <div class="grid-container-content">
+    <div class="item">Học CSS Grid nâng cao</div>
+    <div class="item">Học CSS Grid nâng cao</div>
+  </div>
+
+</body>
+</html>
