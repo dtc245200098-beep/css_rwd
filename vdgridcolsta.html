@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thực hành CSS Grid</title>
+  <style>
+    /* 1. Thiết lập Grid Container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột bằng nhau */
+      gap: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    /* Định dạng chung cho các ô */
+    .grid-item {
+      background-color: #2196F3;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    /* 2. Áp dụng grid-column-start theo yêu cầu */
+    .item-custom {
+      /* Bắt đầu từ vạch cột số 2 và kéo dài 2 cột */
+      grid-column-start: 2;
+      grid-column-end: span 2; 
+      background-color: #4CAF50; /* Bài bắt mắt hơn */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Bài thực hành CSS Grid</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">Item 1</div>
+    <div class="grid-item item-custom">Item 2 (Bắt đầu từ Line 2, span 2)</div>
+    <div class="grid-item">Item 3</div>
+    <div class="grid-item">Item 4</div>
+  </div>
+
+</body>
+</html>
