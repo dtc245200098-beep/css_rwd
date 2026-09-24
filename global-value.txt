@@ -1,0 +1,16 @@
+<style>
+  .parent-grid {
+    display: grid;
+    grid-row-gap: 30px;
+  }
+  .child-grid {
+    display: grid;
+    grid-row-gap: inherit; /* Kế thừa 30px từ parent-grid */
+  }
+</style>
+<div class="parent-grid">
+  <div class="child-grid">
+    <div>Sub-item 1</div>
+    <div>Sub-item 2</div>
+  </div>
+</div>

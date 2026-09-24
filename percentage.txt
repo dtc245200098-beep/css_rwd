@@ -1,0 +1,14 @@
+<style>
+  .grid-percent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    grid-row-gap: 10%; /* Khoảng cách hàng bằng 10% chiều cao container */
+  }
+</style>
+<div class="grid-percent">
+  <div>Item A</div>
+  <div>Item B</div>
+  <div>Item C</div>
+  <div>Item D</div>
+</div>
